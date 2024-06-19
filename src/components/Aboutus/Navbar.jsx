@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/vereda2.png"; // make sure to replace with your actual image path
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,30 +12,30 @@ const Navbar = () => {
         <div className="w-540px h-[24px] justify-between">
           <ul className="flex space-x-4 font-bold text-[#01121A] gap-[24px]">
             <li>
-              <a href="#about" className=" hover:text-[#2079AF]">
+              <Link to='/about' className=" hover:text-[#2079AF]">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" className="hover:text-[#2079AF]">
+              <Link to="/service" className="hover:text-[#2079AF]">
                 Services
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#portfolio" className="hover:text-[#2079AF]">
+              <Link to="/portfolio" className="hover:text-[#2079AF]">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contactUs" className="hover:text-[#2079AF]">
+              <Link to="/contactus" className="hover:text-[#2079AF]">
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#blogs" className="hover:text-[#2079AF]">
+              <Link to="/blogs" className="hover:text-[#2079AF]">
                 Blogs
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
